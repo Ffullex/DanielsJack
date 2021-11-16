@@ -32,7 +32,6 @@ if ($result['login'] == $login) {
     <script>
             Swal.fire(
             'Вы успешно зарегистрировались',
-            // ahahaha Danya
             'Нажмите ОК, чтобы продолжить',
             'success'
             ).then((result) => {
