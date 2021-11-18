@@ -24,4 +24,8 @@ switch($url[0]) {
         include 'pages/Login.php';
         break;
     }
+    case 'upload':{
+        include 'pages/Upload.php';
+        break;
+    }
 }

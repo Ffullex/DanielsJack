@@ -15,6 +15,11 @@ function login($dbh, $login, $password)
 
     if ($items[0]['login'] != '')
     {
+        if ($items[0]['isAdmin'] == 1) {
+            $_SESSION['isAdmin'] = 1;
+        } else {
+            $_SESSION['isAdmin'] = 0;
+        }
         return true;
     }
     else
